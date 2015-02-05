@@ -1,0 +1,9 @@
+{
+  "ip" : "0.0.0.0",
+  "hosts" : [ {
+    "name" : "subdomain.domain.tld",
+    "username" : "generated_username",
+    "password" : "generated_password",
+    "status" : "new"
+  } ]
+}

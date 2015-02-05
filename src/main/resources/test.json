@@ -1,0 +1,24 @@
+{
+  "ip" : "test",
+  "hosts" : [ {
+    "name" : "kyanadei.com",
+    "username" : "xA2guyzRMjU7GWvI",
+    "password" : "VRNNwI4S2jKFH3ww",
+    "status" : "good"
+  }, {
+    "name" : "svn.kyanadei.com",
+    "username" : "cbGStdolX1XgX8qS",
+    "password" : "6nCrmx8is9Y64Qa9",
+    "status" : "good"
+  }, {
+    "name" : "www.kyanadei.com",
+    "username" : "YpqtHDkbPEVYKl8j",
+    "password" : "2gdBuH6Bnvzyo3xk",
+    "status" : "good"
+  }, {
+    "name" : "plex.kyanadei.com",
+    "username" : "gHUJx9jLaRIMAkO5",
+    "password" : "MiNlpnuoH5JxAdOw",
+    "status" : "nohost"
+  } ]
+}
