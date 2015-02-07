@@ -109,7 +109,7 @@ object IPUpdater {
 
     /** Public method for updating all hosts with IP */
     def update = {
-        logger.info( "Checking for IP change and new domains" )
+        //logger.info( "Checking for IP change and new domains" )
 
         val config = getConfig
         val actualIP = getActualIP
