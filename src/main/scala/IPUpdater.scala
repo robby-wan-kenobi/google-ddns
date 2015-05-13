@@ -111,12 +111,20 @@ object IPUpdater {
     def update = {
         //logger.info( "Checking for IP change and new domains" )
 
-        val config = getConfig
-        val actualIP = getActualIP
+        var url = "http://checkip.amazonaws.com"
+        try{
+            val config = getConfig
+            val actualIP = getActualIP
 
-        val allHosts = if( actualIP == getStoredIP( config ).trim ) processUpdateWithStatus( "new", actualIP, config )
-                        else processUpdateWithStatus( "good", actualIP, config )
+            val allHosts = if( actualIP == getStoredIP( config ).trim ) processUpdateWithStatus( "new", actualIP, config )
+                            else processUpdateWithStatus( "good", actualIP, config )
 
-        writeConfigToFile( actualIP, allHosts )
+            writeConfigToFile( actualIP, allHosts )
+        } catch {
+            case e:java.net.SocketTimeoutException => 
+                logger.error("Error: Reponse timed out to " + url)
+            case e: Throwable =>
+                logger.error("Unknown Error: " + e)
+        }
     }
 }

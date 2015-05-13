@@ -1,5 +1,5 @@
 {
-  "ip" : "0.0.0.0",
+  "ip" : "1.2.3.4",
   "hosts" : [ {
     "name" : "subdomain.domain.tld",
     "username" : "generated_username",
