@@ -50,8 +50,3 @@ Also, multiple hosts can be added to the `hosts` array and they will all be upda
 Upon execution, a log file named dynamic-dns.log is generated with basic info and errors that might occur.
 
 Anyway, this isn't the most sophisticated piece of software, but it gets the job done.
-
-Licensing
----------
-
-I don't really care who uses this, so I'm not putting a license on this.
